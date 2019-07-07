@@ -1,0 +1,22 @@
+{
+  "name": "simple-interactive-cssvar",
+  "version": "0.0.1",
+  "description": "A tiny JS powered utility to set/update CSS variables using eventListeners",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "-comingsoon-"
+  },
+  "keywords": [
+    "css",
+    "css-var",
+    "cssvar",
+    "js",
+    "eventlistener"
+  ],
+  "author": "Ralph van Barneveld",
+  "license": "ISC"
+}
