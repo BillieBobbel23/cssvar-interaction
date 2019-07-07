@@ -18,7 +18,7 @@ function init() {
 
   // On scroll we log the height to top as integer
   document.addEventListener("scroll", function(e) {
-    writeVar("h", percent(window.scrollY, READONLY.VIEW_HEIGHT));
+    writeVar("h", percent(window.scrollY, READONLY.HEIGHT));
     writeVar("p", e.clientX);
   });
 }
