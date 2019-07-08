@@ -1,10 +1,11 @@
 {
   "name": "cssvar-interaction",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A tiny JS powered utility to set/update CSS variables using eventListeners",
-  "main": "index.js",
+  "main": "dist/bundle.js",
   "scripts": {
-    "test": "test"
+    "test": "cmd /c start test/index.html",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,9 @@
     "eventlistener"
   ],
   "author": "Ralph van Barneveld",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5"
+  }
 }

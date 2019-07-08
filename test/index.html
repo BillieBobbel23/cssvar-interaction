@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style> 
+            main { 
+                padding: 4rem;
+                width: 16rem;
+                min-height: 200vh;
+                margin: 0 auto;
+            } 
+            .example {
+                transition:all linear 250ms; 
+                padding: 2rem;
+                background: black;
+                color: white;
+                
+            }
+            .example-axis-x {
+                transform: translateX( calc((var(--x) * 1vw) - 50vw) );
+            }
+            .example-axis-y {
+                transform: translateY( calc((var(--y) * 1vh) - 50vh) );
+            }
+            .example-scroll-top {
+                transform:rotate(calc(var(--h) * 1deg));
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>cssvar-interaction</h1>
+            <h2>Using eventlisteners to set CSS variables</h2>
+            <hr>
+            <p>Check some of the examples below</p>
+            <div class="example example-axis-x">
+                <p>Captures mouse movement across the X axis</p>
+            </div>
+            <div class="example example-axis-y">
+                <p>Captures mouse movement across the Y axis</p>
+            </div>
+            <div class="example example-scroll-top">
+                    <p>Captures mouse scroll distance to top of document</p>
+                </div>
+        </main>
+        <script type="text/javascript" src="../dist/bundle.js"></script>
+    </body>
+</html>
