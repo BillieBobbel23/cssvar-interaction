@@ -1,9 +1,10 @@
 # cssvar-interaction
 
 ![npm latest version](https://img.shields.io/npm/v/cssvar-interaction.svg)
+![github version](https://img.shields.io/github/package-json/v/billiebobbel23/cssvar-interaction.svg)
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/cssvar-interaction.svg)
 ![npm downloads](https://img.shields.io/npm/dt/cssvar-interaction.svg)
-![stats](https://david-dm.org/BillieBobbel23/cssvar-interaction/status.svg)
+![stats](https://david-dm.org/billiebobbel23/cssvar-interaction/status.svg)
 
 A tiny JS powered NPM package to set/update CSS variables using eventListeners.
 
