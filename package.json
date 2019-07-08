@@ -1,6 +1,6 @@
 {
-  "name": "simple-interactive-cssvar",
-  "version": "0.0.1",
+  "name": "cssvar-interaction",
+  "version": "0.1.2",
   "description": "A tiny JS powered utility to set/update CSS variables using eventListeners",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "-comingsoon-"
+    "url": "https://github.com/BillieBobbel23/cssvar-interaction"
   },
   "keywords": [
     "css",
