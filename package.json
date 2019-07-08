@@ -1,6 +1,6 @@
 {
   "name": "cssvar-interaction",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A tiny JS powered utility to set/update CSS variables using eventListeners",
   "main": "dist/bundle.js",
   "scripts": {

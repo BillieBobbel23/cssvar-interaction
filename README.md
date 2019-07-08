@@ -1,6 +1,6 @@
-# cssvar-interation
+# cssvar-interaction
 
-A tiny JS powered utility to set/update CSS variables using eventListeners.
+A tiny JS powered NPM package to set/update CSS variables using eventListeners.
 
 ![npm latest version](https://img.shields.io/npm/v/cssvar-interaction.svg)
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/cssvar-interaction.svg)
@@ -41,4 +41,4 @@ Install using ([Node Package Manager](https://npmjs.com)):
   
 ## Examples:
 
-From the root directory of the package run `` npm run test `` to open a HTML demo page with some examples.
+Run `` npm run test  --prefix node_modules/cssvar-interaction `` in the root of your project to open an HTML demo page with some examples.
