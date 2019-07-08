@@ -1,27 +1,30 @@
-import writeVar from "./functions/write-variable";
-import percent from "./functions/percent";
+import mouseMoveListener from "./listeners/mouse-move";
+import mouseScrollListener from "./listeners/mouse-scroll";
+import dimensions from "./listeners/dimensions";
+
+// Permissions
+const config = {
+  showMouseMoveListeners: true,
+  showScrollListeners: true,
+  showDimensions: true,
+  showViewportDimensions: true,
+  // developer options
+  showDebugFlags: true
+};
 
 function init() {
-  // Set static values
-  const READONLY = {
-    VIEW_HEIGHT: window.innerHeight,
-    VIEW_WIDTH: window.innerWidth,
-    HEIGHT: document.body.clientHeight,
-    WIDTH: document.body.clientWidth
-  };
-
-  // On mouseMove we log X/Y as percentages
-  document.addEventListener("mousemove", function(e) {
-    writeVar("x", percent(e.clientX, READONLY.VIEW_WIDTH));
-    writeVar("y", percent(e.clientY, READONLY.VIEW_HEIGHT));
-  });
-
-  // On scroll we log the height to top as integer
-  document.addEventListener("scroll", function(e) {
-    writeVar("h", percent(window.scrollY, READONLY.HEIGHT));
-    writeVar("p", e.clientX);
-  });
+  if (config.showMouseMoveListeners) {
+    config.showDebugFlags && console.debug("(ACTIVE) showMouseMoveListeners");
+    mouseMoveListener();
+  }
+  if (config.showScrollListeners) {
+    config.showDebugFlags && console.debug("(ACTIVE) showScrollListeners");
+    mouseScrollListener();
+  }
+  if (config.showDimensions) {
+    config.showDebugFlags && console.debug("(PASSIVE) showDimensions");
+    dimensions(config.showViewportDimensions);
+  }
 }
 
-// Runs initial
 init();

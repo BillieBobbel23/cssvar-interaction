@@ -1,0 +1,87 @@
+html {
+    scroll-behavior: smooth;
+}
+main { 
+    padding: 4rem;
+    width: 24rem;
+    min-height: 200vh;
+    margin: 0 auto;
+} 
+.example {
+    transition:all linear 250ms; 
+    padding: 2rem;
+    background: black;
+    color: white;
+    
+}
+/* Relative movement using --x and --y */
+.example-axis-x {
+    transform: translateX( calc((var(--x) * 1vw) - 50vw) );
+}
+.example-axis-y {
+    transform: translateY( calc((var(--y) * 1vh) - 50vh) );
+}
+.example-axis-x, .example-axis-y {
+    text-align: center;
+    max-width: 6rem;
+    background: hotpink;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.example-relative-move-x {
+    transform: translateX(calc((var(--w) * 1px) ));
+}
+.example-relative-move-y {
+    transform: translateY(calc((var(--h) * 1px) ));
+}
+.example-absolute-move-x {
+    transform: translateX(calc((var(--vw) * 1px) ));
+}
+.example-absolute-move-y {
+    transform: translateY(calc((var(--vh) * 1px) ));
+}
+
+.example-dimensions {
+    position: relative;
+    width: calc(var(--vw) * .2px);
+    height: calc(var(--vh) * .2px);
+    padding: 0;
+}
+
+.example-dimensions::before {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    color: white;
+    border: solid 1px white;
+    background: black;
+    content: "A 1:5 approximation of the device viewport"
+}
+
+.example-dimensions::after {
+    content:  "Document viewport";
+    min-width: 6rem;
+    height: calc(var(--h) * .2px);
+    display: inline-block;
+    background: hotpink;
+    width: calc(var(--w) * .2px);
+}
+
+.example-scroll-top::after {
+    content:  "";
+    min-width: 6rem;
+    height: 6rem;
+    display: inline-block;
+    background: hotpink; 
+    transform: scaleX(calc(var(--s) / 25));
+    transform-origin: left;
+}
+
+.view {
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: space-between;
+    flex-direction: column; 
+}

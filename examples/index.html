@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main>
+            <section class="view">
+                <h1>cssvar-interaction</h1>
+                <h2>Using eventlisteners to set CSS variables</h2>
+                <hr>
+                <p>Check some of the examples below</p>
+                <hr>
+                <a href="#dimensions">dimensions</a>
+                <a href="#relative-movement">relative movement</a>
+                <a href="#document-scroll">Document scroll</a>
+                <hr>
+            </section>     
+             <section class="view">
+                <a id="dimensions">dimensions</a>
+                <h3>Using --w, --h, --vw and --vh to get dimensions:</h3>
+                <div class="example example-dimensions device-width example-dimensions-device-height"></div>
+                <p><i>Resize viewport and refresh to get updated results</i></p>
+            </section>
+            <section class="view">
+                <a id="relative-movement">relative movement</a>
+                <h3>Relative movement using --x and --y:</h3>
+                <div class="example example-axis-x">
+                    <p>--x</p>
+                </div>
+                <div class="example example-axis-y">
+                    <p>--y</p>
+                </div>
+            </section>
+            <section class="view">
+                <a id="document-scroll">Document scroll</a>
+                <h3>Document scroll:</h3>
+                <div class="example example-scroll-top">
+                    <p>Captures mouse scroll distance to top of document</p>
+                </div>
+            </section>         
+            
+            
+            
+          
+        </main>
+        <script type="text/javascript" src="../dist/bundle.js"></script>
+    </body>
+</html>
