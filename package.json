@@ -2,9 +2,10 @@
   "name": "cssvar-interaction",
   "version": "0.3.0",
   "description": "A tiny JS powered utility to set/update CSS variables using eventListeners",
-  "main": "dist/bundle.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "cmd /c start examples/index.html",
+    "dev": "cmd /c start examples/index.html",
+    "test": "cmd /c start node_modules/cssvar-interation/examples/index.html",
     "build": "webpack --config webpack.config.js"
   },
   "repository": {
