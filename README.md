@@ -65,8 +65,4 @@ The following are some built-in variables:
 
 ## Examples:
 
-Run `` npm run test `` in the root of your project to open an HTML demo page with some examples.
-
-## Test
-
-Running  `` npm test `` will produce the example page since it contains all functionality  
+Run `` npm test `` in the root of your project to open an HTML demo page with some examples.
